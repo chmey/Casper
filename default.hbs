@@ -51,12 +51,6 @@
                     {{/if}}
                     <a class="gh-social-twitter" href="https://www.linkedin.com/in/chmey/" title="LinkedIn" target="_blank" rel="noopener">{{> "icons/linkedin"}}</a>
                 </div>
-
-                {{#unless @member}}
-                    <a class="gh-head-button" href="#/portal/signup">Subscribe</a>
-                {{else}}
-                    <a class="gh-head-button" href="#/portal/account">Account</a>
-                {{/unless}}
             </div>
         </nav>
     </header>
@@ -73,9 +67,6 @@
             <nav class="site-footer-nav">
                 {{navigation type="secondary"}}
             </nav>
-            <a href="{{@site.url}}">Latest Posts</a>
-            <a href="mailto:hello@chmey.com" target="_blank" rel="noopener">E-Mail</a>
-            {{#if @site.twitter}}<a href="{{twitter_url @site.twitter}}" target="_blank" rel="noopener">Twitter</a>{{/if}}
             <div><a href="https://ghost.org/" target="_blank" rel="noopener">Powered by Ghost</a></div>
         </div>
     </footer>
